@@ -1,0 +1,99 @@
+body {
+  background: #ff5b77c4;
+}
+
+.container {
+  background: #dbd5d5;
+  width: 400px;
+  height: 700px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  & .windows-container {
+    width: 320px;
+    height: 270px;
+    background: #696767;
+    border-radius: 15px;
+    // margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .screen {
+      width: 75%;
+      height: 70%;
+      background: #bfff00;
+    }
+  }
+}
+
+.container .container-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 270px;
+
+  & .cross-button {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100px;
+    height: 100px;
+
+    & :is(.top-mid, .mid-left, .mid-mid, .mid-right, .bot-mid) {
+      background: black;
+    }
+  }
+  & .container-A-B {
+    border-radius: 25px;
+    width: 150px;
+    height: 60px;
+    background: #9c9c9c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotate(-20deg) translate(35px, 10px);
+
+    & .button-a {
+      width: 50px;
+      height: 50px;
+      background: #ff00ff;
+      border-radius: 50%;
+    }
+    & .button-b {
+      width: 50px;
+      height: 50px;
+      background: #ff00ff;
+      border-radius: 50%;
+    }
+  }
+}
+.container-buttons-options {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+
+  & .container-buttons-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100px;
+    height: 20px;
+
+    & .button-select,
+    .button-start {
+      width: 10px;
+      height: 40px;
+      background: rgb(100, 96, 96);
+      border-radius: 10px;
+      transform: rotate(55deg);
+      border: 5px solid grey;
+    }
+  }
+}
