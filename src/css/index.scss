@@ -11,6 +11,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 
   & .windows-container {
     width: 320px;
@@ -27,6 +28,26 @@ body {
       height: 70%;
       background: #bfff00;
     }
+  }
+}
+
+.container .container-line {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 0;
+
+  & .line-x {
+    width: 7px;
+    height: 100%;
+    background: #fffdfdfd;
+    transform: translateX(28px);
+  }
+
+  & .line-y {
+    width: 100%;
+    height: 5px;
+    background: #fffdfdfd;
   }
 }
 
