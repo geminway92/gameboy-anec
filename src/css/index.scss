@@ -19,9 +19,37 @@ body {
     background: #656565;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     transform: translateY(3em);
+    gap: 10px;
+
+    & .container-bar-color {
+      width: 90%;
+      height: 25px;
+      transform: translateY(10px);
+
+      & .container-bar-left,
+      & .container-bar-rigth {
+        width: 100%;
+        height: 8px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+
+        & .bar-red {
+          width: 27%;
+          height: 4px;
+          background: #9a001a;
+        }
+
+        & .bar-blue {
+          width: 27%;
+          height: 4px;
+          background-color: #40007e;
+        }
+      }
+    }
 
     & .screen {
       width: 75%;
